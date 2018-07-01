@@ -1,10 +1,9 @@
-const assert= require("chai").assert;
+const assert = require("chai").assert;
 const currentInventory = require("../data/data.js");
 const renderInventory = require("../fashionInventoryA.js");
 const renderAverageCostPerDesigner = require("../fashionInventoryB.js");
 const filterBlackShoes = require("../fashionInventoryC.js");
-const getLaceNameDataForShoes = require("../fashionInventoryD.js")
-console.log(typeof renderInventory);
+const getLaceNameDataForShoes = require("../fashionInventoryD.js");
 
 describe('renderInventory()', () => {
   it('Deberia ser una función', () => {
@@ -31,7 +30,7 @@ describe('renderAverageCostPerDesigner()', () => {
     {designers:
       [{ name: 'Brunello Cucinelli', averagePrice: 1025 },
         { name: 'Gucci', averagePrice: 850 }
-      ]})
+      ]}) 
   });
 });
 
